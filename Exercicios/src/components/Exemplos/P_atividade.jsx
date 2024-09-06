@@ -1,3 +1,6 @@
+// 5.29 - Copo meio cheio: Ler um número e informar se ele é positivo, 
+// negativo ou nulo.
+
 import { useState } from "react"
 import "./Media.css"
 
@@ -14,7 +17,7 @@ function P_atividade() {
           setResultado('O número é negativo')
 
         }else{
-          setResultado('Número invalido.')
+          setResultado('Número é nulo.')
 
         }
 
@@ -23,11 +26,14 @@ function P_atividade() {
   return (
     <div>
        <div className="Media-conteiner">
-        <h2>Saiba Se o número que você digitou é possitivo ou negativo</h2>
+        <h2>Saiba Se o número que você digitou é positivo ou negativo</h2>
         <h4>Clique o botão abaixo caso vc queira saber</h4>
-        <button onClick={Saber}>Saber</button>
+        <button onClick={Saber}>Saber</button><br />
+
+        Este número é: {resultado}
 
         </div>
+
     </div>
   )
 }
